@@ -10,7 +10,7 @@ class ExampleRepository {
 
   Future<ExampleModel> getCurrentWeather() async {
     try {
-      String cityName = 'New Delhi';
+      String cityName = 'india';
       final weatherData = await exampleDataProvider.getCurrentWeather(cityName);
 
       final data = jsonDecode(weatherData);
