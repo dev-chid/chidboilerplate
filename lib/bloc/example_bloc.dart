@@ -18,6 +18,8 @@ class ExampleBloc extends Bloc<ExampleEvent, ExampleState> {
     emit(ExampleLoading());
     try {
       final example = await exampleRepository.getCurrentWeather();
+      print('Bloc');
+      print(example);
       emit(ExampleSuccess(exampleModel: example));
     } catch (e) {
       emit(ExampleFailure(e.toString()));

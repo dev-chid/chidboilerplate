@@ -4,9 +4,9 @@ import 'dart:convert';
 class ExampleModel {
   final double currentTemp;
   final String currentSky;
-  final double currentPressure;
+  final int currentPressure;
   final double currentWindSpeed;
-  final double currentHumidity;
+  final int currentHumidity;
   ExampleModel({
     required this.currentTemp,
     required this.currentSky,
@@ -18,9 +18,9 @@ class ExampleModel {
   ExampleModel copyWith({
     double? currentTemp,
     String? currentSky,
-    double? currentPressure,
+    int? currentPressure,
     double? currentWindSpeed,
-    double? currentHumidity,
+    int? currentHumidity,
   }) {
     return ExampleModel(
       currentTemp: currentTemp ?? this.currentTemp,
