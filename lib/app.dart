@@ -1,6 +1,7 @@
 import 'package:chidboilerplate/bloc/example_bloc.dart';
 import 'package:chidboilerplate/data/data_provider/example_data_provider.dart';
 import 'package:chidboilerplate/data/repository/example_repository.dart';
+import 'package:chidboilerplate/presentation/screens/category/category_list.dart';
 import 'package:chidboilerplate/presentation/screens/example/example.dart';
 import 'package:chidboilerplate/presentation/screens/example/example_two.dart';
 import 'package:chidboilerplate/presentation/screens/settings/settings_view.dart';
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
                   GoRoute(
                     name: 'home',
                     path: '/',
-                    builder: (context, state) => const ExampleScreen(),
+                    builder: (context, state) => CategoryList(),
                   ),
                   GoRoute(
                     name: 'page2',
